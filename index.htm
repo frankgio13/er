@@ -6,6 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Etherhino, also known as Leslie the Ethereum Rhino." />
 
+	<meta property="og:type" content="article" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="#Etherhino, aka Leslie the $ETH #Ethereum Rhino. Run Rhino Run!" />
+	<meta name="twitter:description" content="Etherhino, also known as Leslie the Ethereum Rhino." />
+	<meta name="twitter:image" content="https://ethereum.org/static/50d8cb4568b509f5b76f877c89cdee33/dd5bb/eth2_rhino.png" />
+	<meta property="og:url" content="https://www.etherhino.com" />
+	<meta property="og:title" content="#Etherhino, aka Leslie the $ETH #Ethereum Rhino. Run Rhino Run!" />
+	<meta property="og:description" content="Etherhino, also known as Leslie the Ethereum Rhino." />
+	<meta property="og:image" content="https://ethereum.org/static/50d8cb4568b509f5b76f877c89cdee33/dd5bb/eth2_rhino.png" />
+	<meta property="og:image:secure_url" content="https://ethereum.org/static/50d8cb4568b509f5b76f877c89cdee33/dd5bb/eth2_rhino.png" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:alt" content="Etherhino, also known as Leslie the Ethereum Rhino." />	
+	
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
@@ -56,14 +69,13 @@
 		</div>
 	</div>
 
-
 </body>
 
 <script>
 function waitForElement(elementId, callBack){
   window.setTimeout(function(){
     var element = document.getElementById(elementId);
-    if(element){
+    if(element && element.childNodes[1] !== ''){
       callBack(elementId, element);
     }else{
       waitForElement(elementId, callBack);
